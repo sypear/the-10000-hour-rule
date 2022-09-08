@@ -92,6 +92,19 @@ main {
     height: 48px;
 }
 
+.loading {
+    display: none;
+}
+
+.loading-image {
+    margin-bottom: 83px;
+}
+
+.result {
+    display: none;
+    margin-bottom: 83px;
+}
+
 .result__text-wrapper {
     margin-bottom: 55px;
 }
@@ -250,6 +263,14 @@ footer {
         height: 72px;
         right: 65px;
         bottom: -25px;
+    }
+
+    .loading-image {
+        margin-bottom: 150px;
+    }
+
+    .result {
+        margin-bottom: 130px;
     }
 
     .result__text-wrapper {
