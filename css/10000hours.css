@@ -196,14 +196,14 @@ main {
 }
 
 .button-go {
-    padding: 13.5px 17.5px 12.5px;
+    padding: 11.5px 17.5px;
     border-radius: 56px;
     background-color: #FCEE21;
     color: #5B2386;
 }
 
 .button-share {
-    padding: 13.5px 17.5px 12.5px;
+    padding: 11.5px 17.5px;
     border-radius: 56px;
     background-color: #FFF;
     color: #5B2386;
@@ -234,7 +234,50 @@ footer {
 }
 
 .modal {
-    display: none;
+    width: 330px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 45px;
+    border-radius: 30px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cheer-text_wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.cheer-text_wrapper p {
+    font-family: 'OTEnjoystoriesBA', sans-serif;
+    color: #5B2386;
+    font-size: 36px;
+}
+
+.cheer-text_wrapper p:first-child {
+    font-size: 64px;
+}
+
+.cheer-text_heart {
+    display: initial;
+}
+
+.licat-img {
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.close-button {
+    padding: 19px 45px 18px;
+    border-radius: 13px;
+    font-size: 14px;
+    color: #5B2386;
+    line-height: 1.5;
+    background-color: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Desktop */
@@ -254,6 +297,10 @@ footer {
 
     input::placeholder {
         font-size: 24px;
+    }
+
+    button {
+        line-height: inherit;
     }
 
     /* Components */
@@ -333,6 +380,9 @@ footer {
     }
 
     .result-text_wrapper p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 24px;
     }
 
@@ -361,5 +411,25 @@ footer {
     
     .copyright small {
         font-size: 12px;
+    }
+
+    .modal {
+        width: 800px;
+        padding: 76px 0 68px;
+    }
+
+    .cheer-text_wrapper p:first-child {
+        margin-bottom: 4px;
+        font-size: 96px;
+    }
+
+    .licat-img {
+        width: 433px;
+        margin-bottom: 74px;
+    }
+    
+    .close-button {
+        padding: 21px 49px;
+        font-size: 24px;
     }
 }
