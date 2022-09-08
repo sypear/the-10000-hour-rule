@@ -8,6 +8,7 @@
     <title>1만 시간의 법칙</title>
     <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/10000hours.css">
 </head>
 <body>
@@ -15,19 +16,19 @@
         <!-- 헤더 시작 -->
         <header>
             <h1 class="title">
-                <img class="title-img" src="./img/title.png" alt="1만 시간의 법칙">
+                <img class="title__image" src="./img/title.png" alt="1만 시간의 법칙">
             </h1>
         </header>
         <!-- 헤더 끝 -->
 
         <!-- 메인 시작 -->
-        <main class="content-main">
+        <main>
             <!-- 1만 시간의 법칙 설명 섹션 시작 -->
             <section class="explation">
                 <h2 class="sr-only">1만 시간의 법칙 설명</h2>
 
-                <img class="subtitle-img" src="./img/subtitle.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
-                <p class="explation-text">
+                <img class="subtitle-image" src="./img/subtitle.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
+                <p class="explation__text">
                     <strong><dfn>1만 시간의 법칙</dfn></strong>은<br/>
                     어떤 분야의 전문가가 되기 위해서는<br>
                     최소한 1만 시간의 훈련이 필요하다는 법칙이다.
@@ -39,22 +40,24 @@
             <section class="calculation">
                 <h2 class="sr-only">1만 시간까지 걸리는 날짜 계산하기</h2>
 
-                <form class="calculation-form">
+                <form class="calculation__form">
                     <p>
-                        나는 <input type="text" placeholder="예)프로그래밍"> 전문가가 될 것이다.
+                        나는<input type="text" placeholder="예)프로그래밍">전문가가 될 것이다.
                     </p>
-                    <p>
-                        그래서 앞으로 매일 하루에
-                    </p>
-                    <p>
-                        <input type="number" placeholder="예)5"> 시간씩 훈련할 것이다.
-                    </p>
+                    <div class="calculation__form--time">
+                        <p>
+                            그래서 앞으로 매일 하루에
+                        </p>
+                        <p>
+                            <input type="number" placeholder="예)5">시간씩 훈련할 것이다.
+                        </p>
+                    </div>
                 </form>
-                <div class="calculation-button_wrapper">
-                    <button class="calculation-button" type="button">
+                <div class="calculation__button-wrapper">
+                    <button class="yellow-button calculate" type="button">
                         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                     </button>
-                    <img class="click-img" src="img/click.png" alt="">
+                    <img src="img/click.png" alt="">
                 </div>
             </section>
             <!-- 1만 시간까지 걸리는 날짜 계산 섹션 끝 -->
@@ -63,18 +66,18 @@
             <section class="result">
                 <h2 class="sr-only">결과 확인하기</h2>
 
-                <div class="result-text_wrapper">
+                <div class="result__text-wrapper">
                     <p>
-                        당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서
+                        당신은<strong>프로그래밍</strong>전문가가 되기 위해서
                     </p>
                     <p>
-                        대략 <strong>5110</strong>일 이상 훈련하셔야 합니다! :)
+                        대략<strong>5110</strong>일 이상 훈련하셔야 합니다! :)
                     </p>
                 </div>
 
-                <div class="button-wrapper">
-                    <button class="button-go" type="button">훈련하러 가기 GO! GO!</button>
-                    <button class="button-share" type="button">공유하기</button>
+                <div class="result__button-wrapper">
+                    <button class="yellow-button go" type="button">훈련하러 가기 GO! GO!</button>
+                    <button class="purple-button share" type="button">공유하기</button>
                 </div>
             </section>
             <!-- 결과 확인하기 섹션 끝 -->
@@ -86,7 +89,7 @@
             <h2 class="sr-only">저작권 알림</h2>
 
             <div class="copyright">
-                <img class="logo-img" src="./img/logo.png" alt="주식회사 위니브">
+                <img class="logo-image" src="./img/logo.png" alt="주식회사 위니브">
                 <small>
                     ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
                     수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
@@ -94,19 +97,23 @@
             </div>
         </footer>
         <!-- 푸터 끝 -->
+    </div>
 
-        <!-- 훈련하러 가기 모달창 시작 -->
-        <section class="modal">
-            <h2 class="blind">응원 모달</h2>
+    <!-- 응원 모달 시작 -->
+    <section class="modal cheer">
+        <h2 class="sr-only">응원의 한마디</h2>
 
+        <div class="cheer__text-wrapper">
             <p>
-                화이팅!!♥♥♥
+                화이팅!!<span class="cheer__text-heart">♥♥♥</span>
+            </p>
+            <p>
                 당신의 꿈을 응원합니다!
             </p>
-            <img class="licat-img" src="./img/licat.png" alt="응원하는 라이켓">
-            <button type="button">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-        </section>
-        <!-- 훈련하러 가기 모달창 끝 -->
-    </div>
+        </div>
+        <img class="licat-image" src="./img/licat.png" alt="응원하는 라이켓">
+        <button class="yellow-button modal__close-button" type="button">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+    </section>
+    <!-- 응원 모달 끝 -->
 </body>
 </html>
