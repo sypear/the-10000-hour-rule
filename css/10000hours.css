@@ -34,7 +34,6 @@ header {
 }
 
 main {
-    margin-bottom: 83px;
     text-align: center;
 }
 
@@ -160,27 +159,27 @@ footer {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.cheer__text-wrapper {
+.modal__text-wrapper {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.cheer__text-wrapper p {
+.modal__text-wrapper p {
     font-family: 'OTEnjoystoriesBA', sans-serif;
     color: #5B2386;
     font-size: 36px;
 }
 
-.cheer__text-wrapper p:first-child {
+.modal__text-wrapper p:first-child {
     font-size: 64px;
 }
 
-.cheer__text-heart {
+.modal__text-heart {
     display: none;
 }
 
-.cheer > .licat-image {
+.modal > .licat-image {
     margin-bottom: 30px;
 }
 
@@ -204,11 +203,6 @@ footer {
     .title__image {
         width: 564px;
     }
-
-    main {
-        margin-bottom: 130px;
-    }
-
     .explation {
         margin-bottom: 97px;
     }
@@ -308,12 +302,12 @@ footer {
         font-size: 12px;
     }
 
-    .cheer__text-wrapper p:first-child {
+    .modal__text-wrapper p:first-child {
         margin-bottom: 4px;
         font-size: 96px;
     }
 
-    .cheer > .licat-image {    
+    .modal > .licat-image {    
         margin-bottom: 74px;
     }
 
