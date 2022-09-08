@@ -1,0 +1,165 @@
+/* Fonts */
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+/* Common Styles */
+body {
+    font-family: 'GmarketSansMedium', sans-serif;
+    background-color: #5B2386;
+}
+
+strong {
+    font-family: 'GmarketSansBold', sans-serif;
+}
+
+input {
+    font-family: 'GmarketSansMedium', sans-serif;
+    box-sizing: border-box;
+    width: 156px;
+    margin: 0 4px;
+    padding: 10px 15px;
+    border: initial;
+    border-radius: 7px;
+}
+
+input::placeholder {
+    color: #BABCBE;
+    text-align: center;
+}
+
+button {
+    font-family: 'GmarketSansBold', sans-serif;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.yellow-button {
+    background-color: #FCEE21;
+    color: #5B2386;
+}
+
+.purple-button {
+    padding: 11.5px 17.5px;
+    border-radius: 56px;
+    background-color: #FFF;
+    color: #5B2386;
+}
+
+.subtitle-image {
+    width: 100%;
+}
+
+.logo-image {
+    width: 91px;
+}
+
+.licat-image {
+    width: 300px;
+}
+
+.modal {
+    width: 330px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 45px;
+    border-radius: 30px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal__close-button {
+    padding: 19px 45px 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sr-only {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* Desktop */
+@media (min-width: 960px) {
+    /* Layouts */
+    .container {
+        width: 900px;
+        padding: 70px 25px;
+    }
+
+    /* Styles */
+    input {
+        width: 228px;
+        margin: 0 8px;
+        font-size: 24px;
+    }
+
+    input::placeholder {
+        font-size: 24px;
+    }
+
+    button {
+        line-height: inherit;
+    }
+
+    .subtitle-image {
+        width: 486px;
+    }
+
+    .logo-image {
+        width: 125px;
+    }
+
+    .licat-image {
+        width: 433px;
+    }
+
+    .modal {
+        width: 800px;
+        padding: 76px 0 68px;
+    }
+
+    .modal__close-button {
+        padding: 21px 49px;
+        font-size: 24px;
+    }
+}
