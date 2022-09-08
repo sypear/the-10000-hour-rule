@@ -1,0 +1,259 @@
+/* Fonts */
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+/* Layouts */
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 31px 0;
+}
+
+/* Styles */
+body {
+    font-family: 'GmarketSansMedium', sans-serif;
+    background-color: #5B2386;
+}
+
+strong {
+    font-family: 'GmarketSansBold', sans-serif;
+}
+
+input {
+    font-family: 'GmarketSansMedium', sans-serif;
+    box-sizing: border-box;
+    width: 120px;
+    padding: 10px 15px;
+    border: initial;
+    border-radius: 7px;
+}
+
+input::placeholder {
+    color: #BABCBE;
+    text-align: center;
+}
+
+button {
+    font-family: 'GmarketSansBold', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.sr-only {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* Components */
+.container {
+    color: #FFF;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    margin-bottom: 31px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 126px;
+    background-image: url('./../img/clock.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.title-img {
+    width: 267px;
+    height: auto;
+}
+
+.content-main {
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.explation {
+    margin-bottom: 62px;
+}
+
+.subtitle-img {
+    width: 100%;
+    margin-bottom: 62px;
+}
+
+.explation-text {
+    font-size: 14px;
+    line-height: 2;
+    background-image: url('./../img/quotes.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.calculation {
+    margin-bottom: 64px;
+}
+
+.calculation-form {
+    margin-bottom: 64px;
+}
+
+.calculation-form p {
+    margin-bottom: 17px;
+}
+
+.calculation-form p:last-child {
+    margin-bottom: initial;
+}
+
+.calculation-button_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.calculation-button {
+    width: 241px;
+    padding: 19px 36.5px 17px;
+    border-radius: 13px;
+    background-color: #FCEE21;
+    color: #5B2386;
+}
+
+.click-img {
+    position: absolute;
+    right: -5px;
+    bottom: -10px;
+    width: 43px;
+    height: 48px;
+}
+
+.result-text_wrapper {
+    margin-bottom: 55px;
+}
+
+.result-text_wrapper p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.result-text_wrapper p:last-child {
+    margin-bottom: initial;
+}
+
+.result-text_wrapper strong {
+    font-size: 24px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-go {
+    padding: 13.5px 17.5px 12.5px;
+    border-radius: 56px;
+    background-color: #FCEE21;
+    color: #5B2386;
+}
+
+.button-share {
+    padding: 13.5px 17.5px 12.5px;
+    border-radius: 56px;
+    background-color: #FFF;
+    color: #5B2386;
+}
+
+footer {
+    text-align: center;
+}
+
+.logo-img {
+    width: 91px;
+}
+
+.copyright {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.copyright .logo-img {
+    margin-bottom: 17px;
+}
+
+.copyright small {
+    font-size: 9px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal {
+    display: none;
+}
+
+/* Desktop */
+@media (min-width: 960px) {
+    /* Layouts */
+    .container {
+        padding: 70px 0;
+        width: 600px;
+    }
+
+    /* Components */
+    header {
+        margin-bottom: 46px;
+    }
+
+    .title {
+        height: 199px;
+    }
+
+    .title-img {
+        width: 564px;
+    }
+
+    .subtitle-img {
+        width: 486px;
+    }
+
+    .explation-text {
+        background-size: 493px auto;
+    }
+}
