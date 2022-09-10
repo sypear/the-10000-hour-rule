@@ -185,7 +185,7 @@ footer {
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     /* Layouts */
     .container {
         width: 900px;
@@ -306,6 +306,10 @@ footer {
     .modal__text-wrapper p:first-child {
         margin-bottom: 4px;
         font-size: 96px;
+    }
+
+    .modal__text-heart {
+        display: inline;
     }
 
     .modal > .licat-image {    
