@@ -124,7 +124,7 @@ button {
 }
 
 /* Desktop */
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     /* Layouts */
     .container {
         width: 900px;
