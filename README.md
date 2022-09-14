@@ -5,14 +5,22 @@
 > * HTML/CSS을 이용하여 1만 시간의 법칙 페이지 퍼블리싱
 > 
 > <br>
-> 
+>
+> 구현 내용
+> * 반응형 디자인 적용 
+>   - <b>지원 범위 : 360px 이상</b>
+>   - 360px ~ 991px : Mobile Design
+>   - 992px ~ : Desktop Design
+>
+> <br>
+>
 > 과제 내용 외 추가 구현 내용
 > * JavaScript를 이용하여 <b>1)1만 시간까지 걸리는 날짜 계산, 2)모달창 on/off, 3)클립보드에 URL 복사 기능 구현</b>
 > 
 > <br>
 > 
 > 데모 페이지
-> * <a href="https://sypear.github.io/the-10000-hour-rule/10000hours.html">1만 시간의 법칙</a><br>
+> * <a href="https://sypear.github.io/the-10000-hour-rule/10000hours.html">1만 시간의 법칙 보러 가기</a><br>
 > 
 > <br>
 > 
