@@ -84,12 +84,17 @@ main {
     line-height: 1.3;
 }
 
-.calculation__button-wrapper > img {
+.calculation__button-wrapper::after {
+    content: '';
     position: absolute;
     right: -5px;
     bottom: -15px;
     width: 43px;
     height: 48px;
+    background-image: url('./../img/click.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .loading {
@@ -253,7 +258,7 @@ footer {
         font-size: 24px;
     }
 
-    .calculation__button-wrapper > img {
+    .calculation__button-wrapper::after {
         width: 64px;
         height: 72px;
         right: 65px;
