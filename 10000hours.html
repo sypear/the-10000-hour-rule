@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <!-- 헤더 시작 -->
-        <header>
+        <header class="container-header">
             <h1 class="title">
                 <img class="title__image" src="./img/title.png" alt="1만 시간의 법칙">
             </h1>
@@ -22,7 +22,7 @@
         <!-- 헤더 끝 -->
 
         <!-- 메인 시작 -->
-        <main>
+        <main class="container-main">
             <!-- 1만 시간의 법칙 설명 섹션 시작 -->
             <section class="explation">
                 <h2 class="sr-only">1만 시간의 법칙 설명</h2>
@@ -57,7 +57,6 @@
                     <button id="calculate-button" class="yellow-button calculate" type="button">
                         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                     </button>
-                    <!-- <img src="img/click.png" alt=""> -->
                 </div>
             </section>
             <!-- 1만 시간까지 걸리는 날짜 계산 섹션 끝 -->
@@ -91,7 +90,7 @@
         <!-- 메인 끝 -->
 
         <!-- 푸터 시작 -->
-        <footer>
+        <footer class="container-footer">
             <h2 class="sr-only">저작권 알림</h2>
 
             <div class="copyright">
@@ -106,7 +105,7 @@
     </div>
 
     <!-- 응원 모달 시작 -->
-    <section id="modal" class="modal">
+    <div id="modal" class="modal">
         <h2 class="sr-only">응원의 한마디</h2>
 
         <div class="modal__text-wrapper">
@@ -119,7 +118,7 @@
         </div>
         <img class="licat-image" src="./img/licat.png" alt="응원하는 라이켓">
         <button id="modal-close-button" class="yellow-button modal__close-button" type="button">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-    </section>
+    </div>
     <!-- 응원 모달 끝 -->
 
     <!-- 스크립트 파일 로드 -->
